@@ -1,0 +1,18 @@
+/*Agora vamos colocar o @media query, que é para ajustar a resolução de acordo com o tamanho da tela. poderias definir tamanhos máximo e mínimo, mas vamos ficar apenas com o tamanho mínimo.*/
+
+    
+     .Container {
+        width: 960px;
+        
+         /*centraliza a div*/
+            margin: 0 auto;  
+    }
+   /*Agora vamos definir os atributos da div card que é a div das imagens e h2 ou seja, vamos definir uma largura de 300px e um padding-rigth de 20px*/
+    .card {
+        width: 300px;
+        padding-right: 20px;
+        
+            /*Para que as imagens não fiquem uma abaixo da outra é só digitar um float*/
+            float: left;
+        
+    }

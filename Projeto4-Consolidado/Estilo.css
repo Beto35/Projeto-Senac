@@ -1,0 +1,63 @@
+
+/*Zera os espaçamentos*/
+ul {
+    padding: 0;  
+    margin: 0;
+}
+li {
+    
+    /*Retira os marcadores da lista*/
+    list-style: none;
+    background-color: #4a4a4a;
+    
+    /*Altera a margem inferior para 3px*/
+    margin-bottom: 3px;
+    
+    /*Permite posicionar e centralisar os itens da lista com o quadradinho do inicio*/
+    padding: 60px 40px 60px 100px;
+    
+    /*coloca imagem como fundo*/
+    background-image: url(Quadrado%20Desativado.png);
+    
+    /*Para a imagem não se repetir*/
+    background-repeat: no-repeat;
+    background-position: 40px center;
+}
+
+li:hover {
+    background-color: #6e6e6e;
+}
+
+li.feito {
+    background-color: #27ae60;
+    background-image: url(Quadrado%20Ativado.png);
+}
+
+li.feito:hover {
+    background-color: #52be7f;
+}
+
+a {
+    color: #fff;
+    
+    /*Retira o Sublinhado do link*/
+    text-decoration: none;
+    
+    /*ficar com coportamento de caixa*/
+    display: block;
+    
+    background-image: url(Seta.png);
+    background-repeat: no-repeat;
+    
+    /*Ajusta a posição da seta*/
+    background-position: right center;
+    font-family: 'oswald',sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    /*Espaço entre as letras*/
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    
+    
+}

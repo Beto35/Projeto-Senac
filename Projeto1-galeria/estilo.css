@@ -1,0 +1,96 @@
+/*Adiciona um espaçamento entre o body e as div (imagens)*/
+body {
+    padding: 10px;
+}
+
+/*Alinhar o texto TagI no centro da div, como o mesmo está dentro do h1, usei o h1, conforme abaixo*/
+h1 {
+    text-align: center;
+    
+    /*Agora aplico a técnica image-replace, ou seja, vou substituir o texto pela imagem (Logotipo)*/
+    background-image: url(Logo.jpg);
+    
+    /*Background-Repeat: no-repeat- é para que a imagem não se repita */
+    Background-Repeat: no-repeat;
+    
+    /*Background-position: center- é para posicionar a imagem no centro*/
+    background-position: center;
+    
+    height: 60px;
+    
+}
+
+
+
+/*Para retirar o texto que está aparecendo por cima da imagem, usamos a propriedade visibility: hidden, conforme abaixo.*/
+h1 span {
+    visibility: hidden;
+}
+
+/*Adiciona uma margem entre as divs*/
+.card {
+    margin-bottom: 30px;
+    
+}
+
+/*Vou ajustar todas as imagens que estão dentro das divs em 100%, para isso utilizo a Class card conforme abaixo*/
+.card img {
+    /*width: 100%;*/
+    width: 300px;
+    height: 169px;
+    border: 1px solid #e3e2d3;
+    border-radius: 10px 6px 50px;
+    box-shadow: #9ba8b8 1px 1px 1px; 
+    
+}
+
+/*Formatar o texto do h2*/
+.card h2 {
+    
+    /*zero as margens*/
+    margin: 0;
+    
+    color: #4a4a4a;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    
+    /*coloco todas as letras maiúsculas*/
+    text-transform: uppercase;
+
+    
+    /*Para Otimizar a renderização*/
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+h2{
+    text-decoration:none;
+}
+
+
+/*Após concluir, vamos torná-lo responsivo*/
+/*Para isso clique na nos três pontinhos do canto superior direito da página/ MOre tool ou mais ferramentas/ Develops tool ou (Ferramentas do desenvolvedor)*/
+/*Identifique e selecione o icone com um celular e tablet*/
+/*escolha a opção iphone6... observe que o texto ficou muito pequeno para ajustar use a tag meta viewport, ou seja, abra o index.html e logo abaixo do <title> digite o código abaixo.*/
+/*meta name="viewport" content="width:device-width, initial-scale=1"*/
+
+/*Agora vamos criar um novo arquivo chamado de mobile.css e colocar o código abaixo.
+@media (min-width: 500px) {
+    
+     .Container {
+        width: 960px;
+        
+         centraliza a div
+            margin: 0 auto;  
+    }
+   Agora vamos definir os atributos da div card que é a div das imagens e h2 ou seja, vamos definir uma largura de 300px e um padding-rigth de 20px
+    .card {
+        width: 300px;
+        padding-right: 20px;
+        
+            Para que as imagens não fiquem uma abaixo da outra é só digitar um float
+            float:left;
+    }
+}
+*/
