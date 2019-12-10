@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax com Duas Imagens</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- jquery cdn file => jquery cdn => jquery 3.x => uncompressed => copia o código --> 
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+       
+   <!-- jquery parallax cdn => parallax-cdn.com the best foss cdn => copia o link -->     
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        
+
+<!-- fonte -->
+ 
+ <!-- https://www.youtube.com/watch?v=w_M-nZTUvDw -->
+  
+  
+</head>
+<body>
+   
+   <section id="intro">
+       
+       <div class="caption">
+           
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <h2>TAG I</h2>
+            
+            <P>
+                A TAG I é uma escola de tecnologia que Acredita que todas as pessoas devem ter a oportunidade de se desenvolver. Por isso, Muito além de proporcionar uma formação tecnológica, o nosso grande objetivo é tornar nossos alunos cidadãos preparados para todas as inovações que o futuro já traz.
+            </P>
+           
+       </div>
+       
+   </section>
+   
+   <!-- depois trocar o second por seção2 -->
+   <section id="second">
+     <!-- depois trocar shoe por segundaimg -->
+     <div class="shoe"></div>
+      
+      <!-- depois trocar caption por titulo -->
+       <div class="caption">
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <h2>IMPORTANCIA</h2>
+         
+          <P>
+                Os cursos da TAG I ensinam programação através de metodologia e materiais exclusivos, nossos alunos aprendem a criar sites de forma simples! Nossa Missão é fazer com que as pessoas tornem-se criadores de tecnologia, preparadas para o sucesso em um futuro digital.
+
+
+            </P>
+       </div>
+           
+       
+   </section>
+   
+   <!-- depois trocar o third por seção3 -->
+   <section id="third">
+     
+     <!-- depois trocar caption por titulo -->
+      <div class="caption">
+          <h2>MÉTODO DE ENSINO.</h2>
+          <P>
+                Nosso método de ensino de programação, utiliza ferramentas de aprendizado desenvolvidas por instituições de renome como o SENAC.
+
+Acreditamos que um futuro pessoal e profissional promissor, que forma cidadãos capazes e responsáveis, começa hoje e aqui.
+            </P>
+            
+            <br>
+            <br>
+            
+            <a href="../Projeto2-galeria/index.html">Iníciar Experiência</a>
+      </div>
+      
+      
+      
+   </section>
+   
+   <script>
+    
+    $('#intro').Parallax("50%", 0.1);
+    $('#second').Parallax("50%", 0.1);
+    $('.shoe').Parallax("50%", 0.4);
+    $('#third').Parallax("50%", 0.3);
+   </script>
+   
+   
+   
+    
+</body>
+</html>
